@@ -1,0 +1,25 @@
+/*
+** actions.h for Cardboard_Pulley in /root/Documents/SVN/C/Cardboard_Pulley/src
+** 
+** Made by Berwick Flavien
+** Login   <berwic_f@etna-alternance.net>
+** 
+** Started on  Sat Oct  7 10:32:22 2017 Berwick Flavien
+** Last update Sat Oct  7 10:32:24 2017 Berwick Flavien
+*/
+
+#ifndef __ACTIONS_H__
+#define __ACTIONS_H__
+
+#include "structs.h"
+#include "inventory.h"
+#include "my.h"
+
+int    perform(t_char *user, func_ptr *to_do, t_action action, t_item *target);
+int    lie_down_p(t_char *user, t_item *target);
+int    get_up_p(t_char *user, t_item *target);
+int    take_p(t_char *user, t_item *target);
+int    open_p(t_char *user, t_item *target);
+int    do_nothing_p(t_char *user, t_item *target);
+
+#endif

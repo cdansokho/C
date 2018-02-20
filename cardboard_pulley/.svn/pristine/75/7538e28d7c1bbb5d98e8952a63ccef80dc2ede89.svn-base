@@ -1,0 +1,23 @@
+/*
+** my_putstr.c for Exercice_2 in /root/Documents/SVN/C/SVN_Jour_03/my_putstr
+** 
+** Made by Berwick Flavien
+** Login   <berwic_f@etna-alternance.net>
+** 
+** Started on  Wed Sep 27 10:16:26 2017 Berwick Flavien
+** Last update Wed Sep 27 10:16:27 2017 Berwick Flavien
+*/
+
+#include <unistd.h>
+
+void	my_putchar(char c);
+
+void    my_putstr(char *str)
+{
+	while (*str != '\0')
+	{
+		write(1, str, 1);
+		str++;
+	}
+	return ;
+}

@@ -1,0 +1,27 @@
+/*
+** my_strcpy.c for Exercice_2 in /root/Documents/SVN/C/SVN_Jour_04/my_strcpy
+** 
+** Made by Berwick Flavien
+** Login   <berwic_f@etna-alternance.net>
+** 
+** Started on  Thu Sep 28 11:07:50 2017 Berwick Flavien
+** Last update Thu Sep 28 11:07:51 2017 Berwick Flavien
+*/
+
+#include <unistd.h>
+
+void	my_putchar(char c);
+
+char	*my_strcpy(char *dest, char *src)
+{
+	int i;
+
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
+}

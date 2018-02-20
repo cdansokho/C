@@ -1,0 +1,27 @@
+/*
+** my_add_list_to_list.c for Exercice_4 in /root/Documents/SVN/C/SVN_Jour_10/my_add_list_to_list
+** 
+** Made by Berwick Flavien
+** Login   <berwic_f@etna-alternance.net>
+** 
+** Started on  Thu Oct  5 13:57:06 2017 Berwick Flavien
+** Last update Thu Oct  5 13:57:07 2017 Berwick Flavien
+*/
+
+#include <unistd.h>
+#include <stdlib.h>
+#include "my_list.h"
+
+void	my_putchar(char c);
+
+void    my_add_list_to_list(t_list **begin1, t_list *begin2)
+{
+	t_list *tmp;
+
+	tmp = *begin1;
+	while (tmp->next != NULL)
+	{
+		tmp = tmp->next;
+	}
+	tmp->next = begin2;
+}

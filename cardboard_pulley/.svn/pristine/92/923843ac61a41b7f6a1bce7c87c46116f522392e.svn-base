@@ -1,0 +1,23 @@
+/*
+** colors.h for Cardboard_Pulley in /root/Documents/SVN/C/Cardboard_Pulley/libmy
+** 
+** Made by Berwick Flavien
+** Login   <berwic_f@etna-alternance.net>
+** 
+** Started on  Sat Oct  7 11:01:52 2017 Berwick Flavien
+** Last update Sat Oct  7 11:01:53 2017 Berwick Flavien
+*/
+
+#ifndef __COLORS_H__
+#define __COLORS_H__
+
+#define C_RED   "\x1B[31m"
+#define C_GRN   "\x1B[32m"
+#define C_YEL   "\x1B[33m"
+#define C_BLU   "\x1B[34m"
+#define C_MAG   "\x1B[35m"
+#define C_CYN   "\x1B[36m"
+#define C_WHT   "\x1B[37m"
+#define C_RESET "\x1B[0m"
+
+#endif

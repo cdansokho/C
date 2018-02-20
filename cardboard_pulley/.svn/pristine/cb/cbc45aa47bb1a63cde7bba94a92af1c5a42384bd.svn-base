@@ -1,0 +1,25 @@
+/*
+** inventory.h for Cardboard_Pulley in /root/Documents/SVN/C/Cardboard_Pulley/src
+** 
+** Made by Berwick Flavien
+** Login   <berwic_f@etna-alternance.net>
+** 
+** Started on  Sat Oct  7 10:33:55 2017 Berwick Flavien
+** Last update Sat Oct  7 10:33:56 2017 Berwick Flavien
+*/
+
+#ifndef __INVENTORY_H__
+#define __INVENTORY_H__
+
+#include <stdlib.h>
+#include "structs.h"
+#include "my.h"
+#include "messages.h"
+
+void	new_item (t_char *user, t_item *item);
+t_item    *get_item(t_char *user, int id);
+void    set_item(t_char *user, t_item *item, int id);
+void	del_item(t_char *user, int id, int (*cmp)());
+void    del_item_showmsg(int found);
+
+#endif

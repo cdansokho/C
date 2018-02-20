@@ -1,0 +1,36 @@
+/*
+** my_putstr_err.c for Exercice_2 in /root/Documents/SVN/C/SVN_Jour_03/my_putstr_err
+** 
+** Made by Berwick Flavien
+** Login   <berwic_f@etna-alternance.net>
+** 
+** Started on  Wed Sep 27 10:16:26 2017 Berwick Flavien
+** Last update Wed Sep 27 10:16:27 2017 Berwick Flavien
+*/
+
+#include <unistd.h>
+#include "colors.h"
+
+void	my_putchar(char c);
+
+void	putstr_err(char *str)
+{
+	while (*str != '\0')
+	{
+		write(2, str, 1);
+		str++;
+	}
+	return ;
+}
+
+void    my_putstr_err(char *str)
+{
+	putstr_err(C_RED);
+	while (*str != '\0')
+	{
+		write(2, str, 1);
+		str++;
+	}
+	putstr_err(C_RESET);
+	return ;
+}

@@ -1,0 +1,20 @@
+/*
+** position.c for Cardboard_Pulley in /root/Documents/SVN/C/Cardboard_Pulley/src
+** 
+** Made by Berwick Flavien
+** Login   <berwic_f@etna-alternance.net>
+** 
+** Started on  Sat Oct  7 10:34:11 2017 Berwick Flavien
+** Last update Sat Oct  7 10:34:12 2017 Berwick Flavien
+*/
+
+#include "position.h"
+
+void printPosition(t_char *target)
+{
+	my_putstr("Position : X=");
+	my_put_nbr(target->coord[E_X]);	
+	my_putstr(", Y=");
+	my_put_nbr(target->coord[E_Y]);	
+	my_putstr(".\n");
+}
